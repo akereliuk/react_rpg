@@ -1,0 +1,12 @@
+{
+    "campaigns": [
+      {
+        "title": "Dummy Save",
+        "id": 0
+      },
+      {
+        "title": "Test Save File",
+        "id": 1
+      }
+    ]
+  }

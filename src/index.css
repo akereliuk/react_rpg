@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.btn-info a{
+  color:#FFF;
+}
+
+.menu-button{
+  width:130px;
+}
+
+.link-panel-list button:last-of-type{
+  margin-top:40px;
+}
+
+.menu-card{
+  width:800px;
+  height:541px;
+}
+
+.max-height{
+  height:100vh;
+}
+
+.flex-1{
+  flex: 1;
+}
