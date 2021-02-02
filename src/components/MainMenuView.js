@@ -1,17 +1,19 @@
 import LinkPanelList from './LinkPanelList';
 import Title from './Title';
 import useFetch from '../hooks/useFetch';
+import { useGameConfigs } from "../context/GameConfigs";
 
 const MainMenuView = () => {
 
     const { error, isPending, data: campaigns } = useFetch('data/campaigns.json');
+    const GameTitle = useGameConfigs().GameTitle;
     
     return (
         <div class="d-flex flex-column max-height">
             <div className="d-flex justify-content-center align-items-center flex-1">
                 <div className="card menu-card pb-3">
                     <div className="card-body">
-                        <Title text="WGRPG" />
+                        <Title text={GameTitle} />
                         <LinkPanelList links={[
                                 {
                                     text: (!campaigns || !campaigns.length ? "New Game" : "Continue"),
