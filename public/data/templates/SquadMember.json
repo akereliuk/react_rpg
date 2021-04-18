@@ -1,0 +1,42 @@
+{
+    "name": "",
+    "class": "",
+    "stats": {
+        "level": 1,
+        "experience": 0,
+        "height": 156,
+        "weight": 54.5,
+        "hp": 18,
+        "fatigue": 0,
+        "insanity": 0,
+        "corruption": 0,
+        "fullness": 0
+    },
+    "combat_stats": {
+
+    },
+    "growths": {
+
+    },
+    "equips": {
+        "armor": "none",
+        "weapon": "none",
+        "accessory": "none"
+    },
+    "traits": [
+
+    ],
+    "achievement_progress": {
+        "dungeon_attempts": 0,
+        "dungeon_successes": 0,
+        "enemies_killed": 0,
+        "events_seen": 0,
+        "food_eaten": 0
+    },
+    "achievements": [
+
+    ],
+    "checkpoints": [
+
+    ]
+}

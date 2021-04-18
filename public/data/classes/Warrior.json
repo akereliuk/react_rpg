@@ -1,0 +1,101 @@
+{
+    "name": "Warrior",
+    "asset_name": "warrior",
+    "rarity": 1,
+    "element_strength": "none",
+    "element_weakness": "none",
+    "base_stats": {
+        "primary": {
+            "max_hp": 24,
+            "max_fatigue": 100,
+            "max_insanity": 100,
+            "max_corruption": 100,
+            "height": 156,
+            "weight": 54.5,
+            "max_fullness": 100,
+            "digestion_rate": 500,
+            "metabolism": 1
+        },
+        "secondary": {
+            "strength": 4,
+            "intelligence": 1,
+            "dexterity": 2,
+            "vitality": 4,
+            "willpower": 3,
+            "charisma": 1
+        },
+        "direct": {
+            "melee": {
+                "min_damage": 1,
+                "max_damage": 3
+            },
+            "ranged": {
+                "min_damage": 1,
+                "max_damage": 3
+            },
+            "magic": {
+                "min_damage": 1,
+                "max_damage": 1
+            },
+            "speed": 4,
+            "crit_rate": 10,
+            "crit_damage": 50,
+            "protection": 0,
+            "status_rate": 100,
+            "status_resist": 20,
+            "accuracy": 100,
+            "dodge": 10
+        }
+    },
+    "growths": {
+        "primary": {
+            "max_hp": 2,
+            "max_fatigue": 0,
+            "max_insanity": 0,
+            "max_corruption": 0,
+            "height": 0,
+            "weight": 0,
+            "max_fullness": 0,
+            "digestion_rate": 0,
+            "metabolism": 0
+        },
+        "secondary": {
+            "strength": 3,
+            "intelligence": 0.5,
+            "dexterity": 1,
+            "vitality": 3,
+            "willpower": 2,
+            "charisma": 0.5
+        },
+        "direct": {
+            "melee": {
+                "min_damage": 0,
+                "max_damage": 0
+            },
+            "ranged": {
+                "min_damage": 0,
+                "max_damage": 0
+            },
+            "magic": {
+                "min_damage": 0,
+                "max_damage": 0
+            },
+            "speed": 0,
+            "crit_rate": 0,
+            "crit_damage": 0,
+            "protection": 1,
+            "status_rate": 5,
+            "status_resist": 0,
+            "accuracy": 5,
+            "dodge": 0
+        }
+    },
+    "skills": [
+        "Rend",
+        "Whirlwind",
+        "Battlecry",
+        "Parry",
+        "Quake",
+        "Execute"
+    ]
+}

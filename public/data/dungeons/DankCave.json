@@ -1,0 +1,20 @@
+{
+    "name": "Dank Cave",
+    "level": 1,
+    "tiles": 4,
+    "events": 0,
+    "enemies": 3,
+    "boss": 1,
+    "spawns": [
+        {
+            "enemies": ["Skeleton", "Skeleton", "Skeleton", "None"],
+            "probability": 1000
+        }
+    ],
+    "boss_spawns": [
+        {
+            "enemies": ["Skeleton", "Skeleton", "SkeletonCaptain", "None"],
+            "probability": 1000
+        }
+    ]
+}

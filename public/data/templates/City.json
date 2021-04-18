@@ -1,0 +1,66 @@
+{
+    "inn": {
+        "level": 1,
+        "keeper": 0
+    },
+    "brothel": {
+        "level": 0,
+        "keeper": 0
+    },
+    "blacksmith": {
+        "level": 0,
+        "keeper": 0
+    },
+    "armourer": {
+        "level": 0,
+        "keeper": 0
+    },
+    "jeweler": {
+        "level": 0,
+        "keeper": 0
+    },
+    "library": {
+        "level": 0,
+        "keeper": 0
+    },
+    "hospital": {
+        "level": 0,
+        "keeper": 0
+    },
+    "psychologist": {
+        "level": 0,
+        "keeper": 0
+    },
+    "gym": {
+        "level": 0,
+        "keeper": 0
+    },
+    "enchanter": {
+        "level": 0,
+        "keeper": 0
+    },
+    "diviner": {
+        "level": 0,
+        "keeper": 0
+    },
+    "graveyard": {
+        "level": 1,
+        "keeper": 0
+    },
+    "barracks": {
+        "level": 1,
+        "keeper": 0
+    },
+    "town hall": {
+        "level": 1,
+        "keeper": 0
+    },
+    "church": {
+        "level": 0,
+        "keeper": 0
+    },
+    "restaurant": {
+        "level": 0,
+        "keeper": 0
+    }
+}

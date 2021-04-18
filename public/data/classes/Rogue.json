@@ -1,0 +1,105 @@
+{
+    "name": "Rogue",
+    "asset_name": "rogue",
+    "rarity": 1,
+    "element_strength": "none",
+    "element_weakness": "none",
+    "base_stats": {
+        "primary": {
+            "max_hp": 18,
+            "max_fatigue": 100,
+            "max_insanity": 100,
+            "max_corruption": 100,
+            "height": 156,
+            "weight": 54.5,
+            "max_fullness": 100,
+            "digestion_rate": 500,
+            "metabolism": 1
+        },
+        "secondary": {
+            "strength": 3,
+            "intelligence": 3,
+            "dexterity": 3,
+            "vitality": 1,
+            "willpower": 2,
+            "charisma": 3
+        },
+        "direct": {
+            "melee": {
+                "min_damage": 1,
+                "max_damage": 3
+            },
+            "ranged": {
+                "min_damage": 1,
+                "max_damage": 3
+            },
+            "magic": {
+                "min_damage": 1,
+                "max_damage": 1
+            },
+            "speed": 6,
+            "crit_rate": 15,
+            "crit_damage": 50,
+            "protection": 0,
+            "status_rate": 100,
+            "status_resist": 20,
+            "immobility_resist": 0,
+            "stun_resist": 0,
+            "accuracy": 100,
+            "dodge": 15
+        }
+    },
+    "growths": {
+        "primary": {
+            "max_hp": 1,
+            "max_fatigue": 0,
+            "max_insanity": 0,
+            "max_corruption": 0,
+            "height": 0,
+            "weight": 0,
+            "max_fullness": 0,
+            "digestion_rate": 0,
+            "metabolism": 0
+        },
+        "secondary": {
+            "strength": 3,
+            "intelligence": 2,
+            "dexterity": 3,
+            "vitality": 0.5,
+            "willpower": 1,
+            "charisma": 2
+        },
+        "direct": {
+            "melee": {
+                "min_damage": 0,
+                "max_damage": 0
+            },
+            "ranged": {
+                "min_damage": 0,
+                "max_damage": 0
+            },
+            "magic": {
+                "min_damage": 0,
+                "max_damage": 0
+            },
+            "speed": 0,
+            "crit_rate": 0,
+            "crit_damage": 0,
+            "protection": 0,
+            "status_rate": 5,
+            "status_resist": 0,
+            "immobility_resist": 0,
+            "stun_resist": 0,
+            "accuracy": 5,
+            "dodge": 1
+        }
+    },
+    "skills": [
+        "Incision",
+        "Repel",
+        "Smokescreen",
+        "Fade Back",
+        "Lunge",
+        "Hidden Dagger"
+    ]
+}

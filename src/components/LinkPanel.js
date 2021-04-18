@@ -1,13 +1,10 @@
-import { Link } from 'react-router-dom';
-
 const LinkPanel = (link) => {
-
     return (
-        <Link to={link.page}>
+        <div onClick={link.runFunc}>
             <div>
                 {link.text}
             </div>
-        </Link>
+        </div>
     );
 }
  

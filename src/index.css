@@ -36,3 +36,20 @@ code {
 .flex-1{
   flex: 1;
 }
+
+.sidebar-border-right{
+  border-right:1px solid #eee;
+}
+
+.sidebar-border-left{
+  border-left:1px solid #eee;
+}
+
+.h-100vh{
+  height:100vh;
+}
+
+.portrait{
+  width:5rem;
+  height:5rem;
+}

@@ -1,12 +1,626 @@
 {
     "campaigns": [
-      {
-        "title": "Dummy Save",
-        "id": 0
-      },
-      {
-        "title": "Test Save File",
-        "id": 1
-      }
+        {
+            "title": "Testing New Function",
+            "id": 1,
+            "created": "2021-02-25T02:22:12.212Z",
+            "updated": "2021-02-25T02:22:12.212Z",
+            "resources": {
+                "gold": 2500,
+                "metal": 0,
+                "science": 0,
+                "culture": 0,
+                "crystals": 0
+            },
+            "city": {
+                "inn": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "brothel": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "blacksmith": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "armourer": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "jeweler": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "library": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "hospital": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "psychologist": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "gym": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "enchanter": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "diviner": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "graveyard": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "barracks": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "town hall": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "church": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "restaurant": {
+                    "level": 0,
+                    "keeper": 0
+                }
+            },
+            "squad": [
+                {
+                    "name": "Eira",
+                    "class": "Warrior",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": [],
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Eira",
+                    "class": "Warrior",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": [],
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Eira",
+                    "class": "Warrior",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": [],
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Eira",
+                    "class": "Warrior",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": [],
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                }
+            ],
+            "inventory": {},
+            "checkpoints": [],
+            "dungeons": {
+                "temple": {
+                    "unlocked": true,
+                    "attempted": 0,
+                    "completed": 0
+                }
+            }
+        },
+        {
+            "title": "Testing New Function",
+            "id": 2,
+            "created": "2021-02-25T02:30:55.893Z",
+            "updated": "2021-02-25T02:30:55.893Z",
+            "resources": {
+                "gold": 2500,
+                "metal": 0,
+                "science": 0,
+                "culture": 0,
+                "crystals": 0
+            },
+            "city": {
+                "inn": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "brothel": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "blacksmith": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "armourer": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "jeweler": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "library": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "hospital": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "psychologist": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "gym": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "enchanter": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "diviner": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "graveyard": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "barracks": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "town hall": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "church": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "restaurant": {
+                    "level": 0,
+                    "keeper": 0
+                }
+            },
+            "squad": [
+                {
+                    "name": "Annest",
+                    "class": "Archer",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": [],
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Luned",
+                    "class": "Rogue",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": [],
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Fiora",
+                    "class": "Cleric",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": [],
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Eira",
+                    "class": "Warrior",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": [],
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                }
+            ],
+            "inventory": {},
+            "checkpoints": [],
+            "dungeons": {
+                "temple": {
+                    "unlocked": true,
+                    "attempted": 0,
+                    "completed": 0
+                }
+            }
+        },
+        {
+            "title": "Testing New Function",
+            "id": 3,
+            "created": "2021-03-21T02:18:44.906Z",
+            "updated": "2021-03-21T02:18:44.906Z",
+            "resources": {
+                "gold": 2500,
+                "metal": 0,
+                "science": 0,
+                "culture": 0,
+                "crystals": 0
+            },
+            "city": {
+                "inn": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "brothel": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "blacksmith": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "armourer": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "jeweler": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "library": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "hospital": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "psychologist": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "gym": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "enchanter": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "diviner": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "graveyard": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "barracks": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "town hall": {
+                    "level": 1,
+                    "keeper": 0
+                },
+                "church": {
+                    "level": 0,
+                    "keeper": 0
+                },
+                "restaurant": {
+                    "level": 0,
+                    "keeper": 0
+                }
+            },
+            "squad": [
+                {
+                    "name": "Annest",
+                    "class": "Archer",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": {
+                        "armor": "none",
+                        "weapon": "none",
+                        "accessory": "none"
+                    },
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Luned",
+                    "class": "Rogue",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": {
+                        "armor": "none",
+                        "weapon": "none",
+                        "accessory": "none"
+                    },
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Fiora",
+                    "class": "Cleric",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": {
+                        "armor": "none",
+                        "weapon": "none",
+                        "accessory": "none"
+                    },
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                },
+                {
+                    "name": "Eira",
+                    "class": "Warrior",
+                    "stats": {
+                        "level": 1,
+                        "experience": 0,
+                        "height": 156,
+                        "weight": 54.5,
+                        "hp": 18,
+                        "fatigue": 0,
+                        "insanity": 0,
+                        "corruption": 0,
+                        "fullness": 0
+                    },
+                    "combat_stats": {},
+                    "growths": {},
+                    "equips": {
+                        "armor": "none",
+                        "weapon": "none",
+                        "accessory": "none"
+                    },
+                    "traits": [],
+                    "achievement_progress": {
+                        "dungeon_attempts": 0,
+                        "dungeon_successes": 0,
+                        "enemies_killed": 0,
+                        "events_seen": 0,
+                        "food_eaten": 0
+                    },
+                    "achievements": [],
+                    "checkpoints": []
+                }
+            ],
+            "inventory": {},
+            "checkpoints": [],
+            "dungeons": {
+                "temple": {
+                    "unlocked": true,
+                    "attempted": 0,
+                    "completed": 0
+                }
+            }
+        }
     ]
-  }
+}

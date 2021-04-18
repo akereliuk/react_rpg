@@ -1,0 +1,54 @@
+{
+    "name": "Skeleton Captain",
+    "element_strength": "none",
+    "element_weakness": "none",
+    "base_stats": {
+        "primary": {
+            "max_hp": 30,
+            "max_fatigue": 100,
+            "max_insanity": 100,
+            "max_corruption": 100,
+            "height": 156,
+            "weight": 54.5,
+            "max_fullness": 100,
+            "digestion_rate": 500,
+            "metabolism": 1
+        },
+        "secondary": {
+            "strength": 6,
+            "intelligence": 1,
+            "dexterity": 1,
+            "vitality": 1,
+            "willpower": 4,
+            "charisma": 1
+        },
+        "direct": {
+            "melee": {
+                "min_damage": 2,
+                "max_damage": 4
+            },
+            "ranged": {
+                "min_damage": 1,
+                "max_damage": 1
+            },
+            "magic": {
+                "min_damage": 1,
+                "max_damage": 1
+            },
+            "speed": 3,
+            "crit_rate": 5,
+            "crit_damage": 50,
+            "protection": 0,
+            "status_rate": 100,
+            "status_resist": 0,
+            "immobility_resist": 0,
+            "stun_resist": 0,
+            "accuracy": 100,
+            "dodge": 10
+        }
+    },
+    "skills": [
+        "Rend",
+        "Whirlwind"
+    ]
+}
