@@ -1,6 +1,6 @@
 export class Entity{
 
-    constructor(name, stats, combat_stats, element_strength, element_weakness, RPGClass = null, position){
+    constructor(name, stats, combat_stats, element_strength, element_weakness, RPGClass = null, position, isAlive, equips){
         this.name = name;
         if(stats === null && name !== "None"){
             this.current_hp = combat_stats.primary.max_hp;
@@ -25,12 +25,14 @@ export class Entity{
             this.corruption = stats.corruption;
         }
         this.combat_stats = combat_stats;
+        this.equips = equips;
+        this.isAlive = isAlive;
         this.element_strength = element_strength;
         this.element_weakness = element_weakness;
         this.RPGClass = RPGClass;
         this.position = position;
         this.statusEffects = [];
-        this.isAlive = true;
+        this.isAlive = isAlive;
     }
 
     addStatusEffect(name, damage, turns){

@@ -13,13 +13,12 @@ export class Enemy extends Entity{
 
             let combat_stats = RPGEnemy.base_stats;
 
-            super(name, null, combat_stats, RPGEnemy.element_strength, RPGEnemy.element_weakness, null, position);
-            this.isAlive = true;
+            super(name, null, combat_stats, RPGEnemy.element_strength, RPGEnemy.element_weakness, null, position, true, RPGEnemy.equips);
             this.attackable = true;
+            this.skills = RPGEnemy.skills;
         }
         else{
-            super(name, null, {}, "none", "none", null, position);
-            this.isAlive = false;
+            super(name, null, {}, "none", "none", null, position, false, {});
             this.attackable = false;
         }
     }

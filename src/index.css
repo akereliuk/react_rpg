@@ -53,3 +53,10 @@ code {
   width:5rem;
   height:5rem;
 }
+
+.vert-scroller{
+  overflow-y:auto;
+  flex-direction:column-reverse;
+  justify-content:flex-end;
+  height:310px;
+}

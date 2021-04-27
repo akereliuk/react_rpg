@@ -54,7 +54,6 @@ export default class CombatHelper {
 
         let roll = this.getRandomInRange(min_damage, max_damage);
         let moddedDmg = dmgMod * roll;
-
         let elementMod = this.calculateElementalMod(element, enemy);
         let eleModdedDmg = moddedDmg * elementMod;
 
@@ -67,8 +66,8 @@ export default class CombatHelper {
         }
 
         let protModdedDmg = critModdedDmg * (1 + (enemy.combat_stats.direct.protection / 100));
-
-        return protModdedDmg;
+        
+        return [protModdedDmg, didCrit];
     }
 
     static calculateStatus(player, enemy, statusMod){
@@ -83,7 +82,7 @@ export default class CombatHelper {
         }
     }
 
-    calculateElementalMod(element, enemy){
+    static calculateElementalMod(element, enemy){
         if(element === enemy.element_weakness){
             return 1.5;
         }
@@ -95,11 +94,11 @@ export default class CombatHelper {
         }
     }
 
-    rollD100(){
+   static rollD100(){
         return Math.floor(Math.random() * 101);
     }
 
-    getRandomInRange(min, max) {
+    static getRandomInRange(min, max) {
         min = Math.ceil(min);
         max = Math.floor(max);
         return Math.floor(Math.random() * (max - min + 1)) + min;

@@ -4,46 +4,120 @@ import { useState, useEffect } from 'react';
 import { useHistory } from "react-router-dom";
 import Portrait from './Portrait';
 import CombatHelper from '../helpers/CombatHelper';
+import Skill from '../models/Skill.js';
+import { Player } from '../models/Player.js';
 
 const BattleView = () => {
 
     const location = useLocation();
     const [party, setParty] = useState(location.state.party);
-    const enemy_names = location.state.enemies;
-    let new_enemies = [];
-    let position = 1;
-    enemy_names.forEach(name => {
-        new_enemies.push(new Enemy(name, position));
-        position++;
+    const [enemies, setEnemies] = useState(() => {
+
+        const enemy_names = location.state.enemies;
+        let new_enemies = [];
+        let position = 1;
+        enemy_names.forEach(name => {
+            new_enemies.push(new Enemy(name, position));
+            position++;
+        });
+
+        return new_enemies;
     });
-    const [enemies, setEnemies] = useState(new_enemies);
     const [round, setRound] = useState(1);
     const [roundOrder, setRoundOrder] = useState([{name: "name"}]);
+    const [battleLog, setBattleLog] = useState([]);
     const currentTile = location.state.currentTile;
 
     useEffect(() => {
-        setRoundOrder(CombatHelper.calculateRoundOrder(party, enemies)); 
+        setRoundOrder(CombatHelper.calculateRoundOrder(party, enemies));
     }, []);
 
-    const attackEnemy = (position) => {
+    const attackEnemy = (player_pos, positions) => {
 
-        let attackedEnemy = enemies.filter(enemy => {
-            return enemy.position === position
+        let objSkill = new Skill("Incision");
+        let player = roundOrder[0];
+
+        let attackedEnemies = enemies.filter(enemy => {
+            return positions.includes(enemy.position)
         });
-        attackedEnemy[0].takeDamage(5);
-        setEnemies(enemies.map(enemy => {
-            return enemy.position === position ? attackedEnemy[0] : enemy
+
+        attackedEnemies.forEach((enemy, index) => {
+            let newLog = battleLog;
+            let newLogStr = "";
+            [player, attackedEnemies[index], newLogStr] = objSkill.useOnEnemy(player, enemy);
+            newLog.push(newLogStr);
+            setBattleLog(newLog);
+        });
+
+        setEnemies(enemies.map((enemy, index) => {
+            return positions.includes(enemy.position) ? attackedEnemies[index] : enemy
         }));
 
         let newRoundOrder = roundOrder;
         newRoundOrder.shift();
         if(newRoundOrder.length === 0){
             newRoundOrder = CombatHelper.calculateRoundOrder(party, enemies);
+            setRound(round+1);
         }
         else{
             newRoundOrder = CombatHelper.resortRoundOrder(newRoundOrder);
         }
+
         setRoundOrder(newRoundOrder);
+
+        if(newRoundOrder[0].constructor.name === "Enemy"){
+            enemyTurn();
+        }
+    };
+
+    const enemyTurn = () => {
+
+        let enemy = roundOrder[0];
+        let objSkill = new Skill(enemy.skills[0]);
+        let randomPos = [];
+
+        if(objSkill.enemyAOE){
+
+        }
+        else{
+            let targetPos = objSkill.enemyTargets;
+            randomPos = [targetPos[Math.floor(Math.random() * targetPos.length)]];
+        }
+
+        let attackedParty = [];
+        
+        party.forEach((partymember, index) => {
+            if(randomPos.includes(partymember.position)){
+                let newLog = battleLog;
+                let newLogStr = "";
+                let newPartyMember = new Player(partymember.name, partymember.RPGClass.name, partymember, partymember.position);
+                [enemy, attackedParty[index], newLogStr] = objSkill.useOnEnemy(enemy, newPartyMember);
+                newLog.push(newLogStr);
+                setBattleLog(newLog);
+            }
+        });
+
+        let newParty = party.map((partymember, index) => {
+            return randomPos.includes(partymember.position) ? attackedParty[index] : partymember
+        });
+
+        setParty(newParty);
+
+        let newRoundOrder = roundOrder;
+        newRoundOrder.shift();
+        if(newRoundOrder.length === 0){
+            newRoundOrder = CombatHelper.calculateRoundOrder(party, enemies);
+            setRound(round+1);
+        }
+        else{
+            newRoundOrder = CombatHelper.resortRoundOrder(newRoundOrder);
+        }
+        
+        setRoundOrder(newRoundOrder);
+
+        if(newRoundOrder[0].constructor.name === "Enemy"){
+            enemyTurn();
+        }
     };
 
     return (
@@ -51,8 +125,12 @@ const BattleView = () => {
             <div className="d-flex justify-content-center align-items-center flex-1">
                 Round {round} - {roundOrder[0].name}'s turn
             </div>
-            <div className="d-flex justify-content-center align-items-center flex-1">
-                Battle Log
+            <div className="d-flex justify-content-center flex-1">
+                <div className="d-flex vert-scroller align-items-start">
+                    {battleLog.map(logEntry => {
+                        return (<div>{logEntry}</div>)
+                    })}
+                </div>
             </div>
             <div className="d-flex justify-content-between align-items-center flex-1">
                 <div className="d-flex">
@@ -117,7 +195,7 @@ const BattleView = () => {
                 </div>
             </div>
             <div className="d-flex justify-content-center align-items-center flex-1">
-                <button type="button" onClick={() => attackEnemy(1)} className="btn btn-info mb-2 menu-button bottom-button">
+                <button type="button" onClick={() => attackEnemy(1, [1])} className="btn btn-info mb-2 menu-button bottom-button">
                     Attack
                 </button>
             </div>
