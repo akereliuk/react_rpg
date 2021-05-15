@@ -2,7 +2,7 @@ export default class CombatHelper {
 
     static calculateRoundOrder(party, enemies){
         let merged = [...party, ...enemies];
-        merged = merged.filter(o => o.name !== "None");
+        merged = merged.filter(o => o.name !== "None" && o.isAlive);
         merged.sort((a, b) => parseInt(a.combat_stats.direct.speed) - parseInt(b.combat_stats.direct.speed)).reverse();
         return merged;
     }

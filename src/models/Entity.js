@@ -43,6 +43,33 @@ export class Entity{
         });
     }
 
+    tickStatusEffects(){
+
+        let log = [];
+        let type = "";
+
+        this.statusEffects.forEach((SE, index) => {
+
+            if(SE.damage > 0){
+                this.takeDamage(SE.damage);
+                log.push(`${this.name} receives ${SE.damage} ${SE.name} damage.`);
+                type = "DoT";
+            }
+            else{
+                log.push(`${this.name} is effected by ${SE.name}.`);
+                type = "SkipTurn";
+            }
+
+            this.statusEffects[index].turns--;
+
+            if(this.statusEffects[index].turns === 0){
+                this.statusEffects.splice(index, 1);
+            }
+        });
+
+        return [log, type];
+    }
+
     takeDamage(damage){
         this.current_hp = Math.max(0, this.current_hp - damage);
 

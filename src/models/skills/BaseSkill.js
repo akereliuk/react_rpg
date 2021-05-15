@@ -30,12 +30,14 @@ export default class BaseSkill{
                 
                 enemy.takeDamage(calcDamage);
                 
-                if(calcStatus){
-                    enemy.addStatusEffect("Bleed", (1 * player.level), 2);
-                    log = `${player.name} used ${this.name} on ${enemy.name} for ${calcDamage} and applied Bleed.`;
-                }
-                else{
-                    log = `${player.name} used ${this.name} on ${enemy.name} for ${calcDamage}.`;
+                if(this.SEName){
+                    if(calcStatus){
+                        enemy.addStatusEffect(this.SEName, (this.SEDmg * player.level), this.SETurns);
+                        log = `${player.name} used ${this.name} on ${enemy.name} for ${calcDamage} and applied ${this.SEName}.`;
+                    }
+                    else{
+                        log = `${player.name} used ${this.name} on ${enemy.name} for ${calcDamage}.`;
+                    }
                 }
             }
             else{

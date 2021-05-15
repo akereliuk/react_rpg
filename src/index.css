@@ -60,3 +60,7 @@ code {
   justify-content:flex-end;
   height:310px;
 }
+
+.selectable{
+  border:1px solid green;
+}

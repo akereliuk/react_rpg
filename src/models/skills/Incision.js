@@ -14,6 +14,9 @@ export default class Incision extends BaseSkill {
         this.dmgMod = 1;
         this.accMod = 1;
         this.SEMod = 1;
+        this.SEName = "Bleed";
+        this.SETurns = 3;
+        this.SEDmg = 1;
         this.element = "none";
     }
 }

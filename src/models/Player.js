@@ -85,6 +85,10 @@ export class Player extends Entity{
         this.checkpoints = player_data.checkpoints; 
     }
 
+    tickStatusEffects(){
+        return super.tickStatusEffects();
+    }
+
     takeDamage(damage){
         super.takeDamage(damage);
     }

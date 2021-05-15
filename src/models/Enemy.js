@@ -23,6 +23,10 @@ export class Enemy extends Entity{
         }
     }
 
+    tickStatusEffects(){
+        return super.tickStatusEffects();
+    }
+
     takeDamage(damage){
         super.takeDamage(damage);
     }
